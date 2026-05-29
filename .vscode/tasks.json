@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "configure with CMake (MSYS2 MinGW64)",
+            "type": "shell",
+            "command": "C:\\msys64\\mingw64\\bin\\cmake.exe",
+            "args": [
+                "-G \"MinGW Makefiles\"",
+                "."
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            },
+            "problemMatcher": [],
+            "detail": "Configure project with CMake using MSYS2 MinGW64 toolchain"
+        },
+        {
+            "label": "build with MSYS2 MinGW64",
+            "type": "shell",
+            "command": "C:\\msys64\\mingw64\\bin\\mingw32-make.exe",
+            "args": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "detail": "Build using MSYS2 MinGW64 make"
+        }
+    ]
+}
